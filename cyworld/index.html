@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>미니홈피 :: 사람들</title>
+    <link href="./styles/index.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/e89fff508e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <!-- 가장바깥 -->
+    <div class="background">
+      <!-- 파란테두리 -->
+      <div class="outerbox">
+        <!-- 실질내용 -->
+        <div class="wrapper">
+          <!-- 왼쪽 랩 -->
+          <div class="wrapper__left">
+            <!-- 왼쪽 랩 위 -->
+            <div class="wrapper__left__header">
+              <!-- TODAY 0 | TOTAL 12345 -->
+              <div class="today">
+                <span>Today</span>
+                <span>0</span>
+                <span> | TOTAL</span>
+                <span>12345</span>
+              </div>
+            </div>
+
+            <!-- 왼쪽 랩 몸통 -->
+            <div class="wrapper__left__body">
+              <!-- 왼쪽 랩 몸통 상단 -->
+              <div class="left__body__header">
+                <div class="left__body__header__gray"></div>
+                <div class="left__body__header__line"></div>
+              </div>
+
+              <!-- 왼쪽 랩 몸통 프로필 -->
+              <div class="left__body__profile">
+                <div class="profile__detail">
+                  <i class="fa-solid fa-user"> 이름 </i>
+                </div>
+                <div class="profile__detail">
+                  <i class="fa-solid fa-phone"> 전화번호</i>
+                </div>
+                <div class="profile__detail">
+                  <i class="fa-solid fa-envelope"> 이메일</i>
+                </div>
+                <div class="profile__detail">
+                  <i class="fa-solid fa-star"> 인스타그램</i>
+                </div>
+              </div>
+
+              <!-- 왼쪽 랩 몸통 하단 -->
+              <div class="left__body__footer">
+                <div class="wrapper__feel">
+                  <div class="feel__title">오늘의 기분</div>
+                  <select>
+                    <option selected="true">기쁨 🙂</option>
+                    <option>슬픔 😥</option>
+                    <option>졸림 😴</option>
+                    <option>화남 😡</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 오른쪽 랩 -->
+          <div class="wrapper__right">
+            <!-- 오른쪽 랩 상단 -->
+            <div class="wrapper__right__header">
+              <div class="right__header__title">사이좋은 사람들, 싸이월드</div>
+              <div class="right__header__setting">사생활보호설정</div>
+            </div>
+            <!-- 오른쪽 랩 몸통 -->
+            <div class="wrapper__right__body">
+              <iframe id="contentFrame" src="./home.html"></iframe>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="navigation__item" id="menuHome" onclick="menuHome()">
+              홈
+            </div>
+
+            <div
+              class="navigation__item"
+              id="menuJukebox"
+              onclick="menuJukebox()"
+            >
+              주크박스
+            </div>
+
+            <div class="navigation__item" id="menuGame" onclick="menuGame()">
+              게임
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
