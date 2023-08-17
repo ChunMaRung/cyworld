@@ -18,6 +18,9 @@
   background-image: url("../images/outerbox.png");
 }
 
+.left__body__header__gray img{
+width:100%;
+}
 /* 실질내용 */
 .wrapper {
   display: flex;
